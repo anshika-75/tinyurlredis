@@ -1,0 +1,13 @@
+callback function pass kiya : () => console.log(`server is running on port ${3000}`));
+
+jab bhi koi function ke aage () lagg jaaye mtlb vo call ho rha
+//sign up
+naam email password 
+
+//koi bhi function hr time run kare toh middle ware use hota
+
+//agar url se koi data chaiye toh req.params karte hai ---ye data ko user need me todhta hai
+
+
+//nanoid - jitna parameter do utna short string bana kar dega
+//long url -> short link 
