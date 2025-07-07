@@ -6,9 +6,9 @@ const JWT_SECRET = 'anshikagupta';
 const bcrypt = require('bcrypt');
 const shortUrl = require('../Routes/ShortUrl')
 
-//post user se info lena
+
 Routes.post('/signup', async (req, res) => {
-    //{} kyu use hua - jab hame ek se jaida data chaiye toh use krte 
+
   const { email, password } = req.body;
 
 
@@ -21,13 +21,12 @@ Routes.post('/signup', async (req, res) => {
     await user.save();
 
     const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '1hr' });
-    ///change karenge isko 
-    //cookie client side save krti hai 
+
 
     res.cookie('tokenname', token, {
     httpOnly: true,           
     secure: false,            
-    maxAge: 60 * 60 * 1000,   // 1 hour in milisecond 
+    maxAge: 60 * 60 * 1000,  
   })
   .status(201)
   .json({ message: 'Signup successful' });
@@ -36,15 +35,11 @@ Routes.post('/signup', async (req, res) => {
   }
 });
 
-// yaha se sign in wala start ho gaya 
-//time lagega user ko email password me iss liye async await 
-//kuch glt bhi ho sakta iss liye try catch 
 Routes.post('/signin', async(req,res)=>{
         const {email,password}= req.body;
 
 try{
-  //object - user
-  //mongo ki property hoti , yaha user ko sab kuch mil jayega sirf email nhi 
+
         const user=await User.findOne({email})
         if(!user)return res.status(400).json({ error: 'Invalid email' });
 
