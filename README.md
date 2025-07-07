@@ -15,10 +15,13 @@ A fast and lightweight **URL Shortener** built using **Node.js**, **Express**, *
 
 ---
 
+[PHOTO-2025-07-07-17-26-53](https://github.com/user-attachments/assets/07cf3d72-ac9f-4299-b38e-b10af272c1b2)
+
 ##  Technologies Used
 
 | Tech         | Description                       |
-|--------------|-----------------------------------|
+|--------------|----------------------------!
+-------|
 | Node.js      | JavaScript runtime                |
 | Express.js   | Server framework                  |
 | MongoDB      | Database to store users & URLs    |
