@@ -13,7 +13,8 @@ A fast and lightweight **URL Shortener** built using **Node.js**, **Express**, *
 -  Protected routes using middleware
 -  Clean project structure with modular code
 
----
+---![PHOTO-2025-07-07-17-26-53](https://github.com/user-attachments/assets/45c37ca8-0bf6-4385-bd57-e95a8e7bbce6)
+
 
 [PHOTO-2025-07-07-17-26-53](https://github.com/user-attachments/assets/07cf3d72-ac9f-4299-b38e-b10af272c1b2)
 
